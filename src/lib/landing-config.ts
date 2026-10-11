@@ -17,10 +17,10 @@ export const product = {
 
 export const landingParts = [
   { id: 'hero', title: 'Hero', visible: true, purchase: false },
-  { id: 'benefits', title: '¿Qué vas a obtener?', visible: false, purchase: false },
-  { id: 'solution', title: 'Esta es la solución inmediata.', visible: false, purchase: false },
-  { id: 'contents', title: 'Esto es exactamente lo que recibirás.', visible: false, purchase: false },
-  { id: 'bonuses', title: 'Bonos.', visible: false, purchase: false },
+  { id: 'benefits', title: '¿Qué vas a obtener?', visible: true, purchase: false },
+  { id: 'solution', title: 'Esta es la solución inmediata.', visible: true, purchase: false },
+  { id: 'contents', title: 'Esto es exactamente lo que recibirás.', visible: true, purchase: false },
+  { id: 'bonuses', title: 'Bonos.', visible: true, purchase: false },
   { id: 'offer', title: 'Oferta principal.', visible: false, purchase: true },
   { id: 'testimonials', title: 'Testimonios.', visible: false, purchase: false },
   { id: 'recap', title: 'Recapitulación.', visible: false, purchase: true },
