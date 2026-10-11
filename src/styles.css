@@ -237,7 +237,7 @@ body { margin: 0; font-family: var(--font-body); letter-spacing: 0; }
 .cutout-pieces { display: grid; gap: 8px; grid-template-columns: 15px 15px; }
 .cutout-pieces span { height: 25px; border: 1px dashed var(--primary); }
 .preview-floating-icon { position: absolute; right: 17%; bottom: 35px; color: var(--primary); }
-.recipe-book { width: 180px; height: 238px; background: var(--primary); color: var(--primary-foreground); padding: 22px; z-index: 1; transform: rotate(-6deg); border-left: 9px solid color-mix(in oklab, var(--primary) 70%, var(--foreground)); }
+.recipe-book { width: 180px; height: 258px; background: var(--primary); color: var(--primary-foreground); padding: 22px; z-index: 1; transform: rotate(-6deg); border-left: 9px solid color-mix(in oklab, var(--primary) 70%, var(--foreground)); }
 .recipe-art { position: relative; margin: 16px 0; color: var(--secondary); }
 .bubble { position: absolute; border: 1px solid var(--secondary); border-radius: 50%; }
 .bubble-one { width: 15px; height: 15px; right: 14px; top: 1px; }
