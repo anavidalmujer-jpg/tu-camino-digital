@@ -1,0 +1,13 @@
+export const ebookModules = [
+  { number: 1, name: 'Robots de Cartón y Papel', range: '1–15', description: 'Construye mecanismos hidráulicos, palancas, poleas y robots articulados.', scene: 'robot', examples: 'Brazo hidráulico · Mano robótica · Grúa con polea' },
+  { number: 2, name: 'Robots con Pila y Motor', range: '16–30', description: 'Explora circuitos, vibraciones, luces y ruedas que se mueven con un motor.', scene: 'circuit', examples: 'Robot garabato · Auto de tapas · Ojos que brillan' },
+  { number: 3, name: 'Robots de Aire, Gomas e Imanes', range: '31–40', description: 'Prueba la propulsión, la fuerza elástica, el magnetismo y el equilibrio.', scene: 'motion', examples: 'Globo propulsado · Robot saltarín · Equilibrista' },
+  { number: 4, name: 'Robots que se Programan sin Pantalla', range: '41–50', description: 'Crea secuencias con tarjetas, repite acciones y encuentra errores en tus instrucciones.', scene: 'code', examples: 'Robot humano · Tarjetas de código · Detective de errores' },
+  { number: 5, name: 'Cocina y Química Segura', range: '51–70', description: 'Descubre reacciones, mezclas, tensión superficial y cristales con experimentos caseros.', scene: 'chemistry', examples: 'Volcán · Slime de maicena · Burbujas gigantes' },
+  { number: 6, name: 'Aire, Agua y Fuerza', range: '71–85', description: 'Experimenta con presión, sustentación, corrientes de agua y estructuras resistentes.', scene: 'water', examples: 'Paracaídas · Tornado en botella · Puente de papel' },
+  { number: 7, name: 'Electricidad y Magnetismo', range: '86–100', description: 'Observa cargas eléctricas, arma circuitos y explora campos magnéticos.', scene: 'magnet', examples: 'Pila de limón · Brújula casera · Circuito con LED' },
+  { number: 8, name: 'Luz y Sonido', range: '101–115', description: 'Investiga cómo viajan la luz y las vibraciones con instrumentos hechos en casa.', scene: 'light', examples: 'Periscopio · Teléfono de vasos · Teatro de sombras' },
+  { number: 9, name: 'Plantas, Cuerpo y Naturaleza', range: '116–130', description: 'Observa la germinación, el transporte de agua en plantas y el funcionamiento del cuerpo.', scene: 'nature', examples: 'Frijol que germina · Flores de colores · Mide tu pulso' },
+  { number: 10, name: 'Espacio, Clima y Tierra', range: '131–140', description: 'Explora las fases de la Luna y construye instrumentos para observar el clima y la Tierra.', scene: 'space', examples: 'Luna con galletas · Pluviómetro · Reloj de sol' },
+  { number: 11, name: 'Física y Mates Divertidas', range: '141–150', description: 'Juega con el equilibrio, las formas de papel, los péndulos y la flotabilidad.', scene: 'physics', examples: 'Cinta de Möbius · Péndulo de Galileo · Barco de aluminio' },
+] as const;
