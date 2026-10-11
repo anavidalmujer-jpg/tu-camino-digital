@@ -21,8 +21,8 @@ export const landingParts = [
   { id: 'solution', title: 'Esta es la solución inmediata.', visible: true, purchase: false },
   { id: 'contents', title: 'Esto es exactamente lo que recibirás.', visible: true, purchase: false },
   { id: 'bonuses', title: 'Bonos.', visible: true, purchase: false },
-  { id: 'offer', title: 'Oferta principal.', visible: false, purchase: true },
-  { id: 'testimonials', title: 'Testimonios.', visible: false, purchase: false },
+  { id: 'offer', title: 'Oferta principal.', visible: true, purchase: true },
+  { id: 'testimonials', title: 'Testimonios.', visible: true, purchase: false },
   { id: 'recap', title: 'Recapitulación.', visible: false, purchase: true },
   { id: 'faq', title: 'Preguntas frecuentes.', visible: false, purchase: false },
 ] as const;

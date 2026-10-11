@@ -9,7 +9,7 @@ describe('Product and landing rules', () => {
     expect(landingParts.map(part => part.id)).toEqual(['hero', 'benefits', 'solution', 'contents', 'bonuses', 'offer', 'testimonials', 'recap', 'faq']);
   });
   it('shows the developed parts and keeps all final parts hidden', () => {
-    expect(landingParts.filter(part => part.visible).map(part => part.id)).toEqual(['hero', 'benefits', 'solution', 'contents', 'bonuses']);
+    expect(landingParts.filter(part => part.visible).map(part => part.id)).toEqual(['hero', 'benefits', 'solution', 'contents', 'bonuses', 'offer', 'testimonials']);
   });
   it('reserves both purchases for the offer and recap only', () => {
     expect(landingParts.filter(part => part.purchase).map(part => part.id)).toEqual(['offer', 'recap']);

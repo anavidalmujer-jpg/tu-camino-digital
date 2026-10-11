@@ -4,6 +4,7 @@ import projectImage from '@/assets/stem-projects.asset.json';
 import { landingParts, product } from '@/lib/landing-config';
 import { EbookContents, ImmediateSolution, ProductBenefits } from '@/components/learning-sections';
 import { BonusSection } from '@/components/bonus-section';
+import { MainOffer, Testimonials } from '@/components/offer-section';
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,6 +30,8 @@ function Index() {
           {part.id === 'solution' ? <ImmediateSolution /> : null}
           {part.id === 'contents' ? <EbookContents /> : null}
           {part.id === 'bonuses' ? <BonusSection /> : null}
+          {part.id === 'offer' ? <MainOffer /> : null}
+          {part.id === 'testimonials' ? <Testimonials /> : null}
         </section>
       ))}
     </main>

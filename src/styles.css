@@ -322,3 +322,29 @@ body { margin: 0; font-family: var(--font-body); letter-spacing: 0; }
   .fact-value { font-size: 38px; }
   .fact-label { font-size: 10px; }
 }
+.offer-band { background: var(--primary); }
+.offer-card { max-width: 760px; background: var(--background); border-radius: var(--radius); padding: 48px; text-align: center; border-top: 8px solid var(--secondary); }
+.offer-kicker { font-size: 11px; font-weight: 800; letter-spacing: .08em; color: var(--muted-foreground); margin-bottom: 12px; }
+.offer-title { margin-bottom: 22px; }
+.offer-includes { list-style: none; padding: 0; margin: 0 auto 30px; display: grid; gap: 10px; max-width: 440px; text-align: left; }
+.offer-includes li { display: flex; gap: 10px; font-size: 15px; }
+.offer-includes svg { color: var(--primary); width: 18px; flex-shrink: 0; }
+.offer-before { font-size: 15px; color: var(--muted-foreground); }
+.offer-now { font-family: var(--font-heading); font-size: 40px; font-weight: 700; color: var(--primary); line-height: 1.1; margin-top: 6px; }
+.offer-now span { display: inline-block; font-size: 76px; background: var(--secondary); color: var(--secondary-foreground); padding: 0 14px; border-radius: var(--radius); }
+.offer-once { font-size: 12px; font-weight: 800; letter-spacing: .1em; margin: 10px 0 26px; }
+.buy-button { width: 100%; padding: 22px 20px; border-radius: var(--radius); background: var(--secondary); color: var(--secondary-foreground); font-family: var(--font-heading); font-size: 26px; font-weight: 700; line-height: 1.15; box-shadow: 0 6px 0 color-mix(in oklab, var(--secondary) 60%, var(--foreground)); cursor: pointer; }
+.offer-secure { display: flex; align-items: center; justify-content: center; gap: 7px; font-size: 13px; margin: 22px 0 16px; color: var(--muted-foreground); }
+.offer-payments { width: 100%; max-width: 520px; height: auto; margin: auto; display: block; }
+.testimonials-title { text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; }
+.testimonials-sub { text-align: center; max-width: 720px; margin: -12px auto 40px; font-size: 16px; line-height: 1.7; color: var(--muted-foreground); }
+.chat-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.chat-shot { border: 1px solid var(--border); border-radius: 18px; overflow: hidden; background: var(--muted); display: flex; flex-direction: column; min-height: 340px; }
+.chat-head { display: flex; align-items: center; gap: 10px; padding: 12px; background: var(--primary); color: var(--primary-foreground); }
+.chat-avatar { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in oklab, var(--primary-foreground) 20%, transparent); }
+.chat-line { height: 8px; width: 60%; border-radius: 4px; background: color-mix(in oklab, var(--primary-foreground) 35%, transparent); }
+.chat-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 18px; }
+.chat-body p { margin: 0; padding: 14px; border: 1px dashed var(--muted-foreground); border-radius: 10px; font-size: 13px; text-align: center; color: var(--muted-foreground); background: var(--background); }
+.chat-input { padding: 10px; } .chat-input span { display: block; height: 28px; border-radius: 14px; background: var(--background); }
+@media (max-width: 900px) { .chat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .chat-grid { grid-template-columns: 1fr; } .offer-card { padding: 32px 20px; } .offer-now { font-size: 30px; } .offer-now span { font-size: 56px; } .buy-button { font-size: 20px; } }
