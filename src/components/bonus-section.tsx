@@ -7,7 +7,7 @@ const bonuses = [
   { number: 4, name: '50 Proyectos para Crear en 15 Minutos', description: 'Un kit digital para los días en que tienes poco tiempo.', benefit: 'Comparte un momento creativo sin necesitar toda una tarde.', kind: 'quick' },
 ] as const;
 
-function BonusPreview({ kind }: { kind: typeof bonuses[number]['kind'] }) {
+export function BonusPreview({ kind }: { kind: typeof bonuses[number]['kind'] }) {
   if (kind === 'templates') return (
     <div className="bonus-preview template-preview" aria-hidden="true">
       <div className="template-sheet"><div className="preview-overline">TALLER CREATIVO · IMPRIMIBLES</div><div className="preview-title">RECORTA.<br />ARMA. INVENTA.</div><div className="robot-pattern"><Bot size={84} strokeWidth={1} /><div className="cutout-pieces"><span /><span /><span /><span /></div></div><div className="preview-footer"><Scissors size={13} />30 plantillas de robots</div></div>
