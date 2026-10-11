@@ -8,8 +8,8 @@ describe('Product and landing rules', () => {
   it('keeps exactly nine parts in the required order', () => {
     expect(landingParts.map(part => part.id)).toEqual(['hero', 'benefits', 'solution', 'contents', 'bonuses', 'offer', 'testimonials', 'recap', 'faq']);
   });
-  it('only shows the hero at this stage', () => {
-    expect(landingParts.filter(part => part.visible).map(part => part.id)).toEqual(['hero']);
+  it('shows the developed parts and keeps all final parts hidden', () => {
+    expect(landingParts.filter(part => part.visible).map(part => part.id)).toEqual(['hero', 'benefits', 'solution', 'contents', 'bonuses']);
   });
   it('reserves both purchases for the offer and recap only', () => {
     expect(landingParts.filter(part => part.purchase).map(part => part.id)).toEqual(['offer', 'recap']);

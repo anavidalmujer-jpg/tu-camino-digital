@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Atom, Check, FileText, FlaskConical, Lightbulb } from 'lucide-react';
 import projectImage from '@/assets/stem-projects.asset.json';
 import { landingParts, product } from '@/lib/landing-config';
+import { EbookContents, ImmediateSolution, ProductBenefits } from '@/components/learning-sections';
+import { BonusSection } from '@/components/bonus-section';
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,6 +25,10 @@ function Index() {
       {landingParts.map(part => (
         <section key={part.id} id={part.id} hidden={!part.visible} aria-label={part.id === 'hero' ? product.name : part.title}>
           {part.id === 'hero' ? <ProductHero /> : null}
+          {part.id === 'benefits' ? <ProductBenefits /> : null}
+          {part.id === 'solution' ? <ImmediateSolution /> : null}
+          {part.id === 'contents' ? <EbookContents /> : null}
+          {part.id === 'bonuses' ? <BonusSection /> : null}
         </section>
       ))}
     </main>
